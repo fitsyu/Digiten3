@@ -1,0 +1,10 @@
+if you encounter this error:
+  build.xml doesn't exists
+  
+then
+  open pro.user file
+  find android--1 
+  and change it to andoid-19
+  close project
+  re-open it again
+  

@@ -4,19 +4,45 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui printsupport bluetooth dbus
+
+CONFIG += c++11
+LIBS   += -I/usr/local/include/GRT -lgrt
+
+#LIBS    += -L../SignalReceiver/ -lSignalReceiver
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = SignalProcessor
-TEMPLATE = app
+TEMPLATE = app #lib
 
 
 SOURCES += main.cpp\
-        signalprocessor.cpp
+        signalprocessor.cpp \
+    centering.cpp \
+    graph2.cpp \
+    instructor.cpp \
+    qcustomplot.cpp \
+    trainingconfiguration.cpp \
+    trainingresultwidget.cpp \
+    dbusadaptor.cpp \
+    recordingconfigwidget.cpp
 
-HEADERS  += signalprocessor.h
+
+HEADERS  += signalprocessor.h \
+    centering.h \
+    graph2.h \
+    instructor.h \
+    qcustomplot.h \
+    trainingconfiguration.h \
+    trainingresultwidget.h \
+    dbusadaptor.h \
+    recordingconfigwidget.h
 
 CONFIG += mobility
 MOBILITY = 
+
+FORMS += \
+    trainingconfigwidget.ui \
+    trainingresultwidget.ui
 

@@ -5,7 +5,7 @@
 #include <QLabel>
 #include <QTimer>
 #include "trainingconfiguration.h"
-#include "trainingconfigwidget.h"
+#include "recordingconfigwidget.h"
 
 class Instructor : public QWidget
 {
@@ -13,26 +13,26 @@ class Instructor : public QWidget
 public:
     Instructor(QWidget *parent=NULL);
 
-    void trainUser(const QList<gesture> y_trainings);
+    void recordUserMotions(const QList<gesture> y_trainings);
 
 public slots:
     void callibrate();
     void updateCallibrationProgress();
-    void DoNextTraining();
+    void DoNextRecording();
     void tellToSwing();
     void listening();
     void onNewGestureCaptured();
-    void onTrainingCompleted();
+    void onRecordingCompleted();
     void speak(int gestureCode);
     void setTrainings(const QList<gesture> &value);
-    void configTraining();
-    void startTraining(TrainingConfiguration configuration);
+    void configRecording();
+    void startRecording(TrainingConfiguration configuration);
 
 signals:
-    void trainingPrepared(TrainingConfiguration);
+    void recordingPrepared(TrainingConfiguration);
     void callibrationFinished();
-    void nextGestureTrainingStarted();
-    void trainingCompleted();
+    void nextGestureRecordingStarted();
+    void recordingCompleted();
 
 private:
     QLabel* label;
@@ -47,7 +47,7 @@ private:
     QString words;
     int words_time;
 
-    TrainingConfigWidget* config_widget;
+    RecordingConfigWidget* config_widget;
 
 };
 

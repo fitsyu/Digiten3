@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string/>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -65,7 +65,7 @@
     <string notr="true">font: 75 bold italic 16pt &quot;Ubuntu&quot;;</string>
    </property>
    <property name="text">
-    <string>Training Configuration</string>
+    <string>Recording Configuration</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -80,6 +80,9 @@
      <height>22</height>
     </rect>
    </property>
+   <property name="placeholderText">
+    <string>don't use space char here</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="txInfoText">
    <property name="geometry">
@@ -89,6 +92,9 @@
      <width>480</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="placeholderText">
+    <string>this may contain space char</string>
    </property>
   </widget>
   <widget class="QTableWidget" name="gesturesTable">
@@ -112,6 +118,11 @@
    <attribute name="verticalHeaderVisible">
     <bool>false</bool>
    </attribute>
+   <row>
+    <property name="text">
+     <string>New Row</string>
+    </property>
+   </row>
    <row>
     <property name="text">
      <string>New Row</string>
@@ -182,6 +193,26 @@
      <string>do backhand shot</string>
     </property>
    </item>
+   <item row="2" column="0">
+    <property name="text">
+     <string>3</string>
+    </property>
+   </item>
+   <item row="2" column="1">
+    <property name="text">
+     <string>service</string>
+    </property>
+   </item>
+   <item row="2" column="2">
+    <property name="text">
+     <string>5</string>
+    </property>
+   </item>
+   <item row="2" column="3">
+    <property name="text">
+     <string>do service shot</string>
+    </property>
+   </item>
   </widget>
   <widget class="QPushButton" name="btAdd">
    <property name="geometry">
@@ -222,7 +253,7 @@
     <string notr="true">font: 75 14pt &quot;Ubuntu&quot;;</string>
    </property>
    <property name="text">
-    <string>Start Training Now</string>
+    <string>Start Recording Now</string>
    </property>
   </widget>
   <widget class="QSpinBox" name="num_dimension">
@@ -234,8 +265,17 @@
      <height>30</height>
     </rect>
    </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::PlusMinus</enum>
+   </property>
+   <property name="suffix">
+    <string/>
+   </property>
    <property name="minimum">
     <number>1</number>
+   </property>
+   <property name="value">
+    <number>4</number>
    </property>
   </widget>
  </widget>

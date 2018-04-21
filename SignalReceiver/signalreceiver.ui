@@ -1,20 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>SignalReceiver</class>
- <widget class="QWidget" name="SignalReceiver" >
-  <property name="geometry" >
+ <widget class="QWidget" name="SignalReceiver">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>480</height>
+    <width>445</width>
+    <height>252</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>SignalReceiver</string>
   </property>
+  <widget class="QLabel" name="message">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>10</y>
+     <width>421</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 63 italic 14pt &quot;Ubuntu&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Waiting for device bluetooth connection ..
+
+( tap CONNECT button on the controller )</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btQuit">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>201</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+  </widget>
  </widget>
- <layoutDefault spacing="6" margin="11" />
- <pixmapfunction></pixmapfunction>
+ <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>

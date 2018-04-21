@@ -1,5 +1,7 @@
 #include "instructor.h"
 #include <QDebug>
+#include <QApplication>
+#include <QDesktopWidget>
 
 
 Instructor::Instructor(QWidget *parent) :
@@ -8,11 +10,13 @@ Instructor::Instructor(QWidget *parent) :
     setWindowOpacity(0.7);
 
     // put this widget automatically in center of caller
-    setWindowFlags(Qt::SplashScreen);
+//    setWindowFlags(Qt::SplashScreen);
+
+
 
     label = new QLabel(this);
 
-    label->setText("THE Great Instructor");
+    label->setText("The Great Instructor");
     label->setAlignment(Qt::AlignHCenter);
     label->setWordWrap(true);
     label->setAutoFillBackground(true);
@@ -33,14 +37,25 @@ Instructor::Instructor(QWidget *parent) :
     gesture_type_count = 0;
 
     activeGestureIndex = 0;
+
+    setWindowFlags(Qt::FramelessWindowHint);
+    QDesktopWidget *desktop = QApplication::desktop();
+    WI = desktop->width();
+    HE = desktop->height();
+    X = 0.8 * WI;
+    Y = 0.8 * HE;
+    move(X,Y);
+
 }
 
-void Instructor::trainUser(const QList<gesture> y_trainings) // YOUR training session
+void Instructor::recordUserMotions(const QList<gesture> y_trainings) // YOUR training session
 {
+    qDebug() << "recording...";
+    show();
     setTrainings(y_trainings);
     callibrate();
     connect(this, SIGNAL(callibrationFinished()),
-            this, SLOT(DoNextTraining()));
+            this, SLOT(DoNextRecording()));
 }
 
 void Instructor::callibrate()
@@ -66,7 +81,7 @@ void Instructor::updateCallibrationProgress()
     }
 }
 
-void Instructor::DoNextTraining()
+void Instructor::DoNextRecording()
 {
     if (activeGestureIndex < configuration.gestures.count()){
         activeGesture = &configuration.gestures.at(activeGestureIndex);
@@ -124,22 +139,22 @@ void Instructor::onNewGestureCaptured()
     if (gesture_count < sample_num)
         QTimer::singleShot(1500, this, SLOT(tellToSwing()));
     else
-        QTimer::singleShot(1000, this, SLOT(onTrainingCompleted()));
+        QTimer::singleShot(1000, this, SLOT(onRecordingCompleted()));
 
 }
 
-void Instructor::onTrainingCompleted()
+void Instructor::onRecordingCompleted()
 {
     gesture_type_count++;
     if (gesture_type_count < configuration.gestures.count()){
         gesture_count = 0; // reset
-        label->setText("Starting next gesture training..");
-        emit nextGestureTrainingStarted();
+        label->setText("Starting next gesture recording..");
+        emit nextGestureRecordingStarted();
         show();
-        QTimer::singleShot(3000, this, SLOT(DoNextTraining()));
+        QTimer::singleShot(3000, this, SLOT(DoNextRecording()));
     } else {
-        emit trainingCompleted();
-        label->setText("Training complete");
+        emit recordingCompleted();
+        label->setText("Recording complete");
         show();
         QTimer::singleShot(3000, this, SLOT(hide()));
     }
@@ -152,10 +167,13 @@ void Instructor::speak(int gestureCode)
         label->setText("UNKNOWN");
         break;
     case 1:
-        label->setText("SPIN");       // W
+        label->setText("FOREHAND");       // W
         break;
     case 2:
-        label->setText("SLICE");      // M
+        label->setText("BACKHAND");      // M
+        break;
+    case 3:
+        label->setText("SERVICE");      // M
         break;
     default:
         return;
@@ -170,19 +188,19 @@ void Instructor::setTrainings(const QList<gesture> &value)
     configuration.gestures = value;
 }
 
-void Instructor::configTraining()
+void Instructor::configRecording()
 {
     // construct gui with all options
-    config_widget = new TrainingConfigWidget;
+    config_widget = new RecordingConfigWidget;
 
     config_widget->show();
     connect(config_widget, SIGNAL(configured(TrainingConfiguration)),
-            this, SLOT(startTraining(TrainingConfiguration)));
+            this, SLOT(startRecording(TrainingConfiguration)));
 }
 
-void Instructor::startTraining(TrainingConfiguration configuration)
+void Instructor::startRecording(TrainingConfiguration configuration)
 {
     this->configuration = configuration;
-    emit trainingPrepared(this->configuration);
-    trainUser(this->configuration.gestures);
+    emit recordingPrepared(this->configuration);
+    recordUserMotions(this->configuration.gestures);
 }

@@ -4,21 +4,26 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui bluetooth dbus
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = SignalReceiver
-TEMPLATE = app
+TEMPLATE = app #lib
 
 
 SOURCES += main.cpp\
-        signalreceiver.cpp
+        signalreceiver.cpp \
+    dbusadaptor.cpp
 
-HEADERS  += signalreceiver.h
+HEADERS  += signalreceiver.h \
+    dbusadaptor.h
 
 FORMS    += signalreceiver.ui
 
 CONFIG += mobility
 MOBILITY = 
+
+RESOURCES += \
+    resource.qrc
 

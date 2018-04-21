@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/interfaces">
+        <file>Main.qml</file>
+        <file>SmallButton.qml</file>
+        <file>FricButton.qml</file>
+        <file>FricProgressChunk.qml</file>
+        <file>FricProgressWheel.qml</file>
+        <file>ConnectionSetup.qml</file>
+        <file>NavigationButtons.qml</file>
+        <file>WifiConnectionSetup.qml</file>
+    </qresource>
+    <qresource prefix="/img">
+        <file>fan.png</file>
+        <file>arrow-up.png</file>
+        <file>chunk2.png</file>
+        <file>grid.png</file>
+        <file>Digiten Icon.png</file>
+        <file>DigitenLogo.png</file>
+        <file>bt-icon2.png</file>
+        <file>search.png</file>
+        <file>bt_A.png</file>
+        <file>bt_B.png</file>
+        <file>bt_C.png</file>
+        <file>bt_D.png</file>
+        <file>NavButton.png</file>
+        <file>splash.png</file>
+    </qresource>
+</RCC>

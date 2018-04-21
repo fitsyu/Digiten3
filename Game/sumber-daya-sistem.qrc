@@ -1,2 +1,28 @@
-<RCC/>
-
+<RCC>
+    <qresource prefix="/img">
+        <file>Logo.png</file>
+        <file>blue_curl.jpg</file>
+        <file>highlighter.png</file>
+        <file>ash1.png</file>
+        <file>ash2.png</file>
+        <file>clay.jpg</file>
+        <file>grass.jpg</file>
+        <file>hard.jpg</file>
+        <file>Splash.png</file>
+        <file>space_view.jpg</file>
+        <file>beach_view.jpg</file>
+        <file>iCity_View.jpg</file>
+        <file>splash szreen.jpg</file>
+        <file>menu/helpbutton.jpg</file>
+        <file>menu/helpscreen.jpg</file>
+        <file>menu/screenwelcome.png</file>
+        <file>menu/selectcharacters.jpg</file>
+        <file>menu/selectplace.jpg</file>
+        <file>menu/startbutton.jpg</file>
+        <file>menu/background.png</file>
+    </qresource>
+    <qresource prefix="/snd">
+        <file>sound/pop.wav</file>
+        <file>sound/pill.ogg</file>
+    </qresource>
+</RCC>

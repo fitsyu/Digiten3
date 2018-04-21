@@ -1,2 +1,6 @@
-<RCC/>
-
+<RCC>
+    <qresource prefix="/icon">
+        <file>fullracket.png</file>
+        <file>blankracket.png</file>
+    </qresource>
+</RCC>

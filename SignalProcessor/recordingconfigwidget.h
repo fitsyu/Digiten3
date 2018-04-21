@@ -9,18 +9,18 @@ namespace Ui {
 class TrainingConfigWidget;
 }
 
-class TrainingConfigWidget : public QWidget
+class RecordingConfigWidget : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit TrainingConfigWidget(QWidget *parent = 0);
-    ~TrainingConfigWidget();
+    explicit RecordingConfigWidget(QWidget *parent = 0);
+    ~RecordingConfigWidget();
 
 public slots:
     void addGesture();
     void removeGesture();
-    void startTraining();
+    void startRecording();
 
 signals:
     void configured(TrainingConfiguration);

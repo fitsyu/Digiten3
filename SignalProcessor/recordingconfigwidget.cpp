@@ -1,10 +1,10 @@
-#include "trainingconfigwidget.h"
+#include "recordingconfigwidget.h"
 #include "ui_trainingconfigwidget.h"
 
 #include <QMessageBox>
 #include "centering.h"
 
-TrainingConfigWidget::TrainingConfigWidget(QWidget *parent) :
+RecordingConfigWidget::RecordingConfigWidget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::TrainingConfigWidget)
 {
@@ -16,28 +16,28 @@ TrainingConfigWidget::TrainingConfigWidget(QWidget *parent) :
     connect(ui->btRemove, SIGNAL(clicked()),
             this, SLOT(removeGesture()));
     connect (ui->btStart, SIGNAL(clicked()),
-             this, SLOT(startTraining()));
+             this, SLOT(startRecording()));
 
 
     move ( center_point(this) );
 }
 
-TrainingConfigWidget::~TrainingConfigWidget()
+RecordingConfigWidget::~RecordingConfigWidget()
 {
     delete ui;
 }
 
-void TrainingConfigWidget::addGesture()
+void RecordingConfigWidget::addGesture()
 {
     ui->gesturesTable->insertRow(ui->gesturesTable->rowCount());
 }
 
-void TrainingConfigWidget::removeGesture()
+void RecordingConfigWidget::removeGesture()
 {
     ui->gesturesTable->removeRow(ui->gesturesTable->currentRow());
 }
 
-void TrainingConfigWidget::startTraining()
+void RecordingConfigWidget::startRecording()
 {
     // prechecks
     QMessageBox box;

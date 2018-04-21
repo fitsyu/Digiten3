@@ -1,13 +1,40 @@
 TEMPLATE = app
 
-QT += qml quick widgets
+QT += core gui widgets sensors quick bluetooth
 
-SOURCES += main.cpp
+android {
+    QT +=androidextras
+}
 
-RESOURCES += qml.qrc
+TARGET = RemoteRacketController
+TEMPLATE = app
 
-# Additional import path used to resolve QML modules in Qt Creator's code model
-QML_IMPORT_PATH =
 
-# Default rules for deployment.
-include(deployment.pri)
+SOURCES += \
+    transmitter.cpp \
+    themain.cpp
+
+HEADERS  += \
+    transmitter.h
+
+OTHER_FILES += *.qml
+
+FORMS    +=
+
+CONFIG += mobility
+MOBILITY =
+
+RESOURCES += \
+    sumber-daya-alam.qrc
+
+DISTFILES += \
+    android/gradle/wrapper/gradle-wrapper.jar \
+    android/AndroidManifest.xml \
+    android/gradlew.bat \
+    android/res/values/libs.xml \
+    android/build.gradle \
+    android/gradle/wrapper/gradle-wrapper.properties \
+    android/gradlew \
+    android/HardButtonListener.java
+
+ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android

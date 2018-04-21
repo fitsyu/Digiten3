@@ -430,7 +430,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accAB">
@@ -446,7 +446,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="tANBC">
@@ -462,7 +462,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accANBC">
@@ -478,7 +478,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="tBAG">
@@ -494,7 +494,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accBAG">
@@ -510,7 +510,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="tDT">
@@ -526,7 +526,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="tFSM">
@@ -542,7 +542,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accFSM">
@@ -558,7 +558,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="tDTW">
@@ -574,7 +574,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accDTW">
@@ -590,7 +590,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="accDT">
@@ -606,7 +606,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="tGMM">
@@ -622,7 +622,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="tHMMD">
@@ -638,7 +638,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accHMMD">
@@ -654,7 +654,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="tHMMC">
@@ -670,7 +670,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accHMMC">
@@ -686,7 +686,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="accGMM">
@@ -702,7 +702,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="tKNN">
@@ -718,7 +718,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="tRF">
@@ -734,7 +734,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accRF">
@@ -750,7 +750,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="tMD">
@@ -766,7 +766,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accMD">
@@ -782,7 +782,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="accKNN">
@@ -798,7 +798,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QLabel" name="tSVM">
@@ -846,7 +846,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>9s</string>
+     <string>0s</string>
     </property>
    </widget>
    <widget class="QLabel" name="accSM">
@@ -862,7 +862,7 @@ border-color: rgb(255, 170, 0);
      <string notr="true">font: 75 12pt  &quot;Ubuntu&quot;;</string>
     </property>
     <property name="text">
-     <string>100%</string>
+     <string>0%</string>
     </property>
    </widget>
    <widget class="QPushButton" name="uDTW">

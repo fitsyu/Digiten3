@@ -1,0 +1,8 @@
+separate animation files = true
+TBS generation = Panda
+Tex. processing = Simple
+	all option = false
+UV as textures = true
+Copy texture files = ./tex
+Merge actor = true
+Apply modifiers = true

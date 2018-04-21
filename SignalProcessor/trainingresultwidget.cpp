@@ -1,7 +1,7 @@
 #include "trainingresultwidget.h"
 #include "ui_trainingresultwidget.h"
 #include <QDebug>
-#include "AGR/centering.h"
+#include "centering.h"
 
 TrainingResultWidget::TrainingResultWidget(QWidget *parent) :
     QWidget(parent),
