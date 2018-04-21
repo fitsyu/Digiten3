@@ -3,11 +3,15 @@
 
 #include <QObject>
 
-class DBusAdaptor : public QDBusAbstractAdaptor
+class DBusAdaptor : public QObject
 {
+    Q_OBJECT
 public:
-    DBusAdaptor();
-    ~DBusAdaptor();
+    explicit DBusAdaptor(QObject *parent = 0);
+
+signals:
+
+public slots:
 };
 
 #endif // DBUSADAPTOR_H

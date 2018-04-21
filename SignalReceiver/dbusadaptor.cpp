@@ -1,11 +1,6 @@
 #include "dbusadaptor.h"
 
-DBusAdaptor::DBusAdaptor()
-{
-
-}
-
-DBusAdaptor::~DBusAdaptor()
+DBusAdaptor::DBusAdaptor(QObject *parent) : QObject(parent)
 {
 
 }
